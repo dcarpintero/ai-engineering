@@ -12,21 +12,20 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 [![GitHub forks](https://img.shields.io/github/forks/dcarpintero/generative-ai-101.svg?style=social&label=Fork)](https://GitHub.com/dcarpintero/generative-ai-101/network/)
 [![GitHub stars](https://img.shields.io/github/stars/dcarpintero/generative-ai-101.svg?style=social&label=Star)](https://GitHub.com/dcarpintero/generative-ai-101/stargazers/)
 
-- [00. Transformers Self-Attention Mechanism]()
-- [01. In-Context Learning]()
-- [02. LLM-Augmentation]()
-- [03. Retrieval Augmented Generation]()
-- [04. Knowledge Graphs]()
-- [05. Fine-Tuning BERT]()
-- [06. Fine-Tuning ResNet]()
-- [07. Model Optimization: Quantization]()
+- [00. Transformers Self-Attention Mechanism](#00.-Transformers-Self-Attention-Mechanism)
+- [01. In-Context Learning](#01.-In-Context-Learning)
+- [02. LLM-Augmentation](#02.-LLM-Augmentation)
+- [03. Retrieval Augmented Generation](#03.-Retrieval-Augmented-Generation)
+- [04. Knowledge Graphs](#04.-Knowledge-Graphs)
+- [05. Fine-Tuning BERT](#05.-Fine-Tuning-BERT)
+- [06. Fine-Tuning ResNet](#06.-Fine-Tuning-ResNet)
+- [07. Model Optimization: Quantization](#07.-Model-Optimization:-Quantization)
 
 ## 00. Transformers Self-Attention Mechanism
 
 The Transformer architecture, introduced in 2017 by Google and University of Toronto researchers, revolutionized Natural Language Processing (NLP) with its innovative self-attention mechanism. This approach, which replaced traditional Recurrent Neural Networks (RNNs), allows models to learn contextual relationships between words regardless of their position in a sequence. By using attention weights to determine word relevance, Transformers have significantly improved training efficiency and inference accuracy in NLP tasks.
 
-In this notebook, we'll explore how (multi-head) self-attention is implemented and visualize the patterns that are typically learned using [bertviz](https://pypi.org/project/bertviz/
-), an interactive tool for visualizing attention in Transformer models:
+In this notebook, we'll explore how (multi-head) self-attention is implemented and visualize the patterns that are typically learned using [bertviz](https://pypi.org/project/bertviz/), an interactive tool for visualizing attention in Transformer models:
 
 <p align="center">
   <img src="./static/self_attention_s1.png" width="400">
