@@ -14,7 +14,7 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 
 - [Generative-AI-101](#generative-ai-101)
   - [00. Transformers Self-Attention Mechanism](#00-transformers-self-attention-mechanism)
-  - [01. In-Content Learning](#01-in-content-learning)
+  - [01. In-Context Learning](#01-in-context-learning)
   - [02. LLM-Augmentation](#02-llm-augmentation)
   - [03. Retrieval Augmented Generation](#03-retrieval-augmented-generation)
   - [04. Knowledge Graphs](#04-knowledge-graphs)
@@ -35,7 +35,7 @@ In this notebook, we'll explore how (multi-head) self-attention is implemented a
 
 `Transfomers` `Self-Attention` `BERT` `BertViz`
 
-## 01. In-Content Learning
+## 01. In-Context Learning
 
 In Progress
 
@@ -62,7 +62,18 @@ In Progress
 
 ## 05. Fine-Tuning BERT
 
-In Progress
+This notebook demonstrates the process of fine-tuning [BERT-base (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805) for the Microsoft Research Paraphrase Corpus (MRPC) task, part of the General Language Understanding Evaluation (GLUE) benchmark. BERT-base is a transformer model pre-trained on a large corpus of English text using self-supervised learning. Its pre-training involves two key tasks: **Masked Language Modeling (MLM)**, where it predicts randomly masked words in a sentence, and **Next Sentence Prediction (NSP)**, where it determines if two sentences are consecutive in the original text. This approach allows BERT to learn bidirectional representations of language, capturing complex contextual relationships.
+
+While BERT's pre-training provides a robust understanding of language, it requires fine-tuning on specific tasks to adapt its knowledge for particular applications. Besides MRPC, BERT can be fine-tuned for various NLP tasks such as sentiment analysis, named entity recognition, question answering, and text classification. This fine-tuning process leverages transfer learning, allowing the model to achieve high performance on specialized NLP tasks with limited datasets.
+
+It's worth noting that while BERT is typically fine-tuned for specific downstream tasks, other language models like GPT (Generative Pre-trained Transformer) have been fine-tuned on instruction-following tasks. This enables models to understand and execute a wide range of natural language instructions, making them more versatile for general-purpose use. For the sake of simplicity, our BERT fine-tuning for MRPC will focus on the specific task of paraphrase identification.
+
+<p align="center">
+  <img src="./static/fine_tuning_bert_wandb.png">
+</p>
+<p align="center">BERT fine-tuned evaluation on GLUE-MRPC</p>
+
+`BERT` `Tokenization` `Dynamic-Padding` `Hugging Face Transformers` `Weights & Biases` `GLUE-Benchmark` 
 
 ## 06. Fine-Tuning ResNet
 
