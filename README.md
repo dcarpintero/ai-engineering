@@ -12,14 +12,15 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 [![GitHub forks](https://img.shields.io/github/forks/dcarpintero/generative-ai-101.svg?style=social&label=Fork)](https://GitHub.com/dcarpintero/generative-ai-101/network/)
 [![GitHub stars](https://img.shields.io/github/stars/dcarpintero/generative-ai-101.svg?style=social&label=Star)](https://GitHub.com/dcarpintero/generative-ai-101/stargazers/)
 
-- [00. Transformers Self-Attention Mechanism](#00.-Transformers-Self-Attention-Mechanism)
-- [01. In-Context Learning](#01.-In-Context-Learning)
-- [02. LLM-Augmentation](#02.-LLM-Augmentation)
-- [03. Retrieval Augmented Generation](#03.-Retrieval-Augmented-Generation)
-- [04. Knowledge Graphs](#04.-Knowledge-Graphs)
-- [05. Fine-Tuning BERT](#05.-Fine-Tuning-BERT)
-- [06. Fine-Tuning ResNet](#06.-Fine-Tuning-ResNet)
-- [07. Model Optimization: Quantization](#07.-Model-Optimization:-Quantization)
+- [Generative-AI-101](#generative-ai-101)
+  - [00. Transformers Self-Attention Mechanism](#00-transformers-self-attention-mechanism)
+  - [01. In-Content Learning](#01-in-content-learning)
+  - [02. LLM-Augmentation](#02-llm-augmentation)
+  - [03. Retrieval Augmented Generation](#03-retrieval-augmented-generation)
+  - [04. Knowledge Graphs](#04-knowledge-graphs)
+  - [05. Fine-Tuning BERT](#05-fine-tuning-bert)
+  - [06. Fine-Tuning ResNet](#06-fine-tuning-resnet)
+  - [07. Model Optimization: Quantization](#07-model-optimization-quantization)
 
 ## 00. Transformers Self-Attention Mechanism
 
