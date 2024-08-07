@@ -24,6 +24,8 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 
 ## 00. Transformers Self-Attention Mechanism
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/00_transformers_self_attention.ipynb)
+
 The Transformer architecture, introduced in 2017 by Google and University of Toronto researchers, revolutionized Natural Language Processing (NLP) with its innovative self-attention mechanism. This approach, which replaced traditional Recurrent Neural Networks (RNNs), allows models to learn contextual relationships between words regardless of their position in a sequence. By using attention weights to determine word relevance, Transformers have significantly improved training efficiency and inference accuracy in NLP tasks.
 
 In this notebook, we'll explore how (multi-head) self-attention is implemented and visualize the patterns that are typically learned using [bertviz](https://pypi.org/project/bertviz/), an interactive tool for visualizing attention in Transformer models:
@@ -45,6 +47,8 @@ In Progress
 
 ## 03. Retrieval Augmented Generation
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/03_retrieval_augmented_generation.ipynb)
+
 Retrieval Augmented Generation (RAG) is an advanced NLP technique that enhances the quality and reliability of Large Language Models (LLMs) by grounding them in external knowledge sources. This approach combines information retrieval with text generation to produce more factual and specific responses. RAG works by retrieving relevant passages from a knowledge base based on a user query, augmenting the original prompt with this information, and then generating a response using both the query and the augmented context. This method offers several advantages, including improved accuracy, easy incorporation of updated knowledge, and enhanced interpretability through citation of retrieved passages.
 
 In this notebook, we'll build a basic knowledge base with exemplary documents, apply chunking, index the embedded splits into a vector storage, and build a conversational chain with history.
@@ -61,6 +65,8 @@ In this notebook, we'll build a basic knowledge base with exemplary documents, a
 In Progress
 
 ## 05. Fine-Tuning BERT
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/05_fine_tuning_bert.ipynb)
 
 This notebook demonstrates the process of fine-tuning [BERT-base (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805) for the Microsoft Research Paraphrase Corpus (MRPC) task, part of the [General Language Understanding Evaluation (GLUE)](https://gluebenchmark.com/) benchmark. BERT-base is a transformer model pre-trained on a large corpus of English text using self-supervised learning. Its pre-training involves two key tasks: **Masked Language Modeling (MLM)**, where it predicts randomly masked words in a sentence, and **Next Sentence Prediction (NSP)**, where it determines if two sentences are consecutive in the original text. This approach allows BERT to learn bidirectional representations of language, capturing complex contextual relationships.
 
