@@ -23,9 +23,10 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 
 ## 00. Transformers Self-Attention Mechanism
 
-The Transformer architecture, introduced in 2017 by Google and University of Toronto researchers, revolutionized Natural Language Processing (NLP) with its innovative self-attention mechanism. This approach, which replaced traditional Recurrent Neural Networks (RNNs), allows models to learn contextual relationships between words regardless of their position in a sequence. By using attention weights to determine word relevance, Transformers have significantly improved training efficiency and inference accuracy in various NLP tasks such as machine translation and text summarization.
+The Transformer architecture, introduced in 2017 by Google and University of Toronto researchers, revolutionized Natural Language Processing (NLP) with its innovative self-attention mechanism. This approach, which replaced traditional Recurrent Neural Networks (RNNs), allows models to learn contextual relationships between words regardless of their position in a sequence. By using attention weights to determine word relevance, Transformers have significantly improved training efficiency and inference accuracy in NLP tasks.
 
-In this notebook, we'll explore the patterns that are typically learned by this self-attention mechanism in multi-heads using bertviz, an interactive tool for visualizing attention in Transformer models:
+In this notebook, we'll explore how (multi-head) self-attention is implemented and visualize the patterns that are typically learned using [bertviz](https://pypi.org/project/bertviz/
+), an interactive tool for visualizing attention in Transformer models:
 
 <p align="center">
   <img src="./static/self_attention_s1.png" width="400">
