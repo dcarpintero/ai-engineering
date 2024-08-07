@@ -24,7 +24,7 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 
 ## 00. Transformers Self-Attention Mechanism
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/00_transformers_self_attention.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/00_transformers_self_attention.ipynb) 
 
 The Transformer architecture, introduced in 2017 by Google and University of Toronto researchers, revolutionized Natural Language Processing (NLP) with its innovative self-attention mechanism. This approach, which replaced traditional Recurrent Neural Networks (RNNs), allows models to learn contextual relationships between words regardless of their position in a sequence. By using attention weights to determine word relevance, Transformers have significantly improved training efficiency and inference accuracy in NLP tasks.
 
@@ -75,9 +75,9 @@ While BERT's pre-training provides a robust understanding of language, it requir
 In this notebook, we'll walk through the steps of preparing the MRPC dataset (incl. tokenization and dynamic padding), training the model with [Hugging Face Transformers](https://huggingface.co/docs/transformers/index), and tracking its performance on the paraphrase identification task with the [Weights & Biases](https://wandb.ai/site) framework.
 
 <p align="center">
-  <img src="./static/fine_tuning_bert_wandb.png">
+  <img src="./static/fine_tuning_process.png">
 </p>
-<p align="center">BERT fine-tuned evaluation on GLUE-MRPC</p>
+<p align="center">Basic Fine-Tuning Process</p>
 
 `BERT` `Tokenization` `Dynamic-Padding` `Hugging Face Transformers` `Weights & Biases` `GLUE-Benchmark` 
 
