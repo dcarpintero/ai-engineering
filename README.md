@@ -19,6 +19,7 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
   - [03. Retrieval Augmented Generation](#03-retrieval-augmented-generation)
   - [04. Knowledge Graphs](#04-knowledge-graphs)
   - [05. Fine-Tuning BERT](#05-fine-tuning-bert)
+- [Fine-tuning BERT-base for GLUE MRPC Task](#fine-tuning-bert-base-for-glue-mrpc-task)
   - [06. Fine-Tuning ResNet](#06-fine-tuning-resnet)
   - [07. Model Optimization: Quantization](#07-model-optimization-quantization)
 
@@ -64,9 +65,15 @@ In Progress
 
 This notebook demonstrates the process of fine-tuning [BERT-base (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805) for the Microsoft Research Paraphrase Corpus (MRPC) task, part of the General Language Understanding Evaluation (GLUE) benchmark. BERT-base is a transformer model pre-trained on a large corpus of English text using self-supervised learning. Its pre-training involves two key tasks: **Masked Language Modeling (MLM)**, where it predicts randomly masked words in a sentence, and **Next Sentence Prediction (NSP)**, where it determines if two sentences are consecutive in the original text. This approach allows BERT to learn bidirectional representations of language, capturing complex contextual relationships.
 
-While BERT's pre-training provides a robust understanding of language, it requires fine-tuning on specific tasks to adapt its knowledge for particular applications. Besides MRPC, BERT can be fine-tuned for various NLP tasks such as sentiment analysis, named entity recognition, question answering, and text classification. This fine-tuning process leverages transfer learning, allowing the model to achieve high performance on specialized NLP tasks with limited datasets.
+While BERT's pre-training provides a robust understanding of language, it requires fine-tuning on specific tasks that use the whole sentence (potentially masked) such as sequence classification, token classification, question answering, and paraphrase identification - as in our implementation -. 
 
-It's worth noting that while BERT is typically fine-tuned for specific downstream tasks, other language models like GPT (Generative Pre-trained Transformer) have been fine-tuned on instruction-following tasks. This enables models to understand and execute a wide range of natural language instructions, making them more versatile for general-purpose use. For the sake of simplicity, our BERT fine-tuning for MRPC will focus on the specific task of paraphrase identification.
+# Fine-tuning BERT-base for GLUE MRPC Task
+
+This notebook demonstrates the process of fine-tuning [BERT-base (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805) for the Microsoft Research Paraphrase Corpus (MRPC) task, part of the [General Language Understanding Evaluation (GLUE)](https://gluebenchmark.com/) benchmark. BERT-base is a transformer model pre-trained on a large corpus of English text using self-supervised learning. Its pre-training involves two key tasks: **Masked Language Modeling (MLM)**, where it predicts randomly masked words in a sentence, and **Next Sentence Prediction (NSP)**, where it determines if two sentences are consecutive in the original text. This approach allows BERT to learn bidirectional representations of language, capturing complex contextual relationships.
+
+While BERT's pre-training provides a robust understanding of language, it requires fine-tuning on specific tasks that use the whole sentence (potentially masked) such as sequence classification, token classification, question answering, and paraphrase identification - as in our implementation. This fine-tuning process adapts BERT's general language understanding to the specific nuances of the MRPC task, which involves determining whether two given sentences are paraphrases of each other.
+
+In this notebook, we'll walk through the steps of preparing the MRPC dataset (incl. tokenization and dynamic padding), training the model with [Hugging Face Transformers](https://huggingface.co/docs/transformers/index), and tracking its performance on the paraphrase identification task with the [Weights & Biases](https://wandb.ai/site) framework.
 
 <p align="center">
   <img src="./static/fine_tuning_bert_wandb.png">
