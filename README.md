@@ -19,7 +19,6 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
   - [03. Retrieval Augmented Generation](#03-retrieval-augmented-generation)
   - [04. Knowledge Graphs](#04-knowledge-graphs)
   - [05. Fine-Tuning BERT](#05-fine-tuning-bert)
-- [Fine-tuning BERT-base for GLUE MRPC Task](#fine-tuning-bert-base-for-glue-mrpc-task)
   - [06. Fine-Tuning ResNet](#06-fine-tuning-resnet)
   - [07. Model Optimization: Quantization](#07-model-optimization-quantization)
 
@@ -62,12 +61,6 @@ In this notebook, we'll build a basic knowledge base with exemplary documents, a
 In Progress
 
 ## 05. Fine-Tuning BERT
-
-This notebook demonstrates the process of fine-tuning [BERT-base (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805) for the Microsoft Research Paraphrase Corpus (MRPC) task, part of the General Language Understanding Evaluation (GLUE) benchmark. BERT-base is a transformer model pre-trained on a large corpus of English text using self-supervised learning. Its pre-training involves two key tasks: **Masked Language Modeling (MLM)**, where it predicts randomly masked words in a sentence, and **Next Sentence Prediction (NSP)**, where it determines if two sentences are consecutive in the original text. This approach allows BERT to learn bidirectional representations of language, capturing complex contextual relationships.
-
-While BERT's pre-training provides a robust understanding of language, it requires fine-tuning on specific tasks that use the whole sentence (potentially masked) such as sequence classification, token classification, question answering, and paraphrase identification - as in our implementation -. 
-
-# Fine-tuning BERT-base for GLUE MRPC Task
 
 This notebook demonstrates the process of fine-tuning [BERT-base (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805) for the Microsoft Research Paraphrase Corpus (MRPC) task, part of the [General Language Understanding Evaluation (GLUE)](https://gluebenchmark.com/) benchmark. BERT-base is a transformer model pre-trained on a large corpus of English text using self-supervised learning. Its pre-training involves two key tasks: **Masked Language Modeling (MLM)**, where it predicts randomly masked words in a sentence, and **Next Sentence Prediction (NSP)**, where it determines if two sentences are consecutive in the original text. This approach allows BERT to learn bidirectional representations of language, capturing complex contextual relationships.
 
