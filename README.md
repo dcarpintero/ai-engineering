@@ -45,7 +45,16 @@ In Progress
 
 ## 03. Retrieval Augmented Generation
 
-In Progress
+Retrieval Augmented Generation (RAG) is an advanced NLP technique that enhances the quality and reliability of Large Language Models (LLMs) by grounding them in external knowledge sources. This approach combines information retrieval with text generation to produce more factual and specific responses. RAG works by retrieving relevant passages from a knowledge base based on a user query, augmenting the original prompt with this information, and then generating a response using both the query and the augmented context. This method offers several advantages, including improved accuracy, easy incorporation of updated knowledge, and enhanced interpretability through citation of retrieved passages.
+
+In this notebook, we'll build a basic knowledge base with exemplary documents, apply chunking, index the embedded splits into a vector storage, and build a conversational chain with history.
+
+<p align="center">
+  <img src="./static/rag_chunking.png" width="400">
+</p>
+<p align="center">Exemplary Document Chunking for a RAG-based Conversational Chain</p>
+
+`RAG` `Chunking` `FAISS` `Hugging Face Transformers` `LangChain` `Sentence-Transformers` `Groq` `Meta-Llama-3.1-8B`
 
 ## 04. Knowledge Graphs
 
