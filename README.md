@@ -87,6 +87,15 @@ In Progress
 
 ## 07. Model Optimization: Quantization
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/07_model_optimization_quantization.ipynb)
 
+Quantization is a technique used in the optimization of large language models (LLMs). It reduces the precision of the model's parameters, effectively shrinking its size and computational requirements, while aiming to maintain its performance. The intuition behind Quantization is that we can discretize floating-point values by mapping their range [f_max, f_min] into a smaller range of fixed-point numbers [q_max, q_min], and linearly distributing all values between these ranges. 
 
+In this notebook, we introduce how quantization works specifically for LLMs with a practical implementation of dynamic quantization on a BERT model. We will then benchmark it in terms of model size reduction, quantization analysis, inference latency, and accuracy preservation.
 
+<p align="center">
+  <img src="./static/model_quantization.png">
+</p>
+<p align="center">Scalar Model Quantization</p>
+
+`Model Optimization` `Quantization` `Calibration` `Benchmark`
