@@ -54,7 +54,7 @@ Retrieval Augmented Generation (RAG) is an advanced NLP technique that enhances 
 In this notebook, we'll build a basic knowledge base with exemplary documents, apply chunking, index the embedded splits into a vector storage, and build a conversational chain with history.
 
 <p align="center">
-  <img src="./static/retrieval_augmented_generation.png"  width="90%">
+  <img src="./static/retrieval_augmented_generation.png">
 </p>
 
 `RAG` `Chunking` `FAISS` `Hugging Face Transformers` `LangChain` `Sentence-Transformers` `Groq` `Meta-Llama-3.1-8B`
