@@ -13,12 +13,12 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 [![GitHub stars](https://img.shields.io/github/stars/dcarpintero/generative-ai-101.svg?style=social&label=Star)](https://GitHub.com/dcarpintero/generative-ai-101/stargazers/)
 
 ### TOC:
-- [01. Transformers Self-Attention Mechanism](#00-transformers-self-attention-mechanism)
+- [01. Transformers Self-Attention Mechanism](#01-transformers-self-attention-mechanism)
 - [02. In-Context Learning](#01-in-context-learning)
-- [03. LLM-Augmentation](#02-llm-augmentation)
-- [04. Retrieval Augmented Generation](#03-retrieval-augmented-generation)
-- [05. Knowledge Graphs](#04-knowledge-graphs)
-- [06. Fine-Tuning BERT](#05-fine-tuning-bert)
+- [03. LLM-Augmentation](#03-llm-augmentation-with-tool-integration)
+- [04. Retrieval Augmented Generation](#04-retrieval-augmented-generation)
+- [05. Knowledge Graphs](#05-knowledge-graphs)
+- [06. Fine-Tuning BERT](#06-fine-tuning-bert)
 - [07. Model Optimization: Quantization](#07-model-optimization-quantization)
 
 ## 01. Transformers Self-Attention Mechanism
@@ -40,9 +40,9 @@ Tags: `[Transfomers]` `[Self-Attention]` `[BERT]` `[BertViz]`
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/02_in_context_learning.ipynb) 
 
-With the scaling of model size, [large language models (LLMs) have demonstrated in-context learning (ICL) ability](https://splab.sdu.edu.cn/GPT3.pdf). This enables LLMs to perform tasks and generate responses based on the context provided at inference within the input prompt. In practice, **the context comprises one or a few demonstrations of an intended task that guide (condition) the model** to perform downstream tasks without requiring explicit fine-tuning or retraining. [In 2022, Anthropic researchers investigated the hypothesis that *induction [attention] heads* were the primary mechanism for in-context learning in transformer language models](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html). This induction attention mechanism looks back at earlier parts of the input to copy and complete sequences, which would allow models to adapt to patterns and generate responses aligned to the provided context.
+With the scaling of model size, [large language models (LLMs) have demonstrated in-context learning (ICL) ability](https://splab.sdu.edu.cn/GPT3.pdf). This enables LLMs to perform tasks and generate responses based on the context provided at inference within the input prompt. In practice, the context comprises one or a few demonstration examples that guide (condition) the model to perform downstream tasks without requiring explicit fine-tuning or retraining. [In 2022, Anthropic researchers investigated the hypothesis that *induction [attention] heads* were the primary mechanism for in-context learning in transformer language models](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html). This induction attention mechanism looks back at earlier parts of the input to copy and complete sequences, which would allow models to adapt to patterns and generate responses aligned to the provided context.
 
-This notebook explores the concept of in-context learning, demonstrating how to enable an LLM to implement Named Entity Recognition (NER). This flexible approach supports rapid adaptation to specific domains without requiring a large training dataset.
+This notebook explores the concept of in-context learning, demonstrating how to enable an LLM to implement Named Entity Recognition (NER). This flexible approach supports rapid adaptation to various specific domains without requiring a large training dataset.
 
 <p align="center">
   <img src="./static/in_context_learning.png">
@@ -51,11 +51,15 @@ This notebook explores the concept of in-context learning, demonstrating how to 
 Tags: `[in-context learning]` `[named-entity-recognition]` `[function-calling]`
 `[openai]`
 
-## 03. LLM-Augmentation
+## 03. LLM-Augmentation with Tool Integration
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/03_llm_augmentation.ipynb) 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/03_llm_augmentation_tool_integration.ipynb) 
 
-In Progress
+LLM-augmentation with tool integration involves connecting Large Language Models to external tools and APIs, allowing them to perform actions beyond text generation. This approach enables LLMs to access real-time information, execute code, query databases, interact with IoT devices, and more. By interpreting user queries, LLMs can select and determine when to use these external resources, enabling them to provide more accurate, up-to-date, and actionable responses. For example, an LLM integrated with a weather API could offer current forecasts, while one connected to a code execution environment could run and debug code snippets. As a practical implementation, we will enhance the previous notebook and combine ICL and LLM-augmentation with function-calling to enrich a corpus after performing Named Entity Recognition with links to a knowledge base such as Wikipedia.
+
+<p align="center">
+  <img src="./static/llm_augmentation_tool_integration.png">
+</p>
 
 *This notebook is also available at [openai/openai-cookbook/](openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb)* - *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
 
@@ -92,7 +96,7 @@ In this notebook, we'll walk through the steps of preparing the MRPC dataset (in
   <img src="./static/fine_tuning_process.png">
 </p>
 
-Tags: `[BERT]` `[Tokenization]` `[Dynamic-Padding]` `[Hugging Face Transformers]` `[Weights & Biases]` `[GLUE-Benchmark]` 
+Tags: `[BERT]` `[Tokenization]` `[Dynamic-Padding]` `[Hugging Face Transformers]` `[Weights & Biases]` `[GLUE]` 
 
 ## 07. Model Optimization: Quantization
 
