@@ -23,9 +23,9 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 
 ## 01. Transformers Self-Attention Mechanism
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/00_transformers_self_attention.ipynb) 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/01_transformers_self_attention.ipynb) 
 
-The Transformer architecture, introduced in 2017 by Google and University of Toronto researchers, revolutionized Natural Language Processing (NLP) with its innovative (multi-head) self-attention mechanism. This approach replaces traditional Recurrent Neural Networks (RNNs) and allows models to learn various types of contextual relationships between words regardless of their position in a sequence. By incorporating this mechanism into an encoder-decoder architecture, Transformers have significantly improved training efficiency and inference accuracy in NLP tasks.
+The [Transformer](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) architecture, introduced in 2017 by Google and University of Toronto researchers, revolutionized Natural Language Processing (NLP) with its innovative (multi-head) self-attention mechanism. This approach replaces traditional Recurrent Neural Networks (RNNs) and allows models to learn various types of contextual relationships between words regardless of their position in a sequence. By incorporating this mechanism into an encoder-decoder architecture, Transformers have significantly improved training efficiency and inference accuracy in NLP tasks.
 
 In this notebook, we'll explore how (multi-head) self-attention is implemented and visualize the patterns that are typically learned using [bertviz](https://pypi.org/project/bertviz/), an interactive tool for visualizing attention in Transformer models:
 
@@ -37,6 +37,8 @@ In this notebook, we'll explore how (multi-head) self-attention is implemented a
 Tags: `[Transfomers]` `[Self-Attention]` `[BERT]` `[BertViz]`
 
 ## 02. In-Context Learning
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/02_in_context_learning.ipynb) 
 
 With the scaling of model size, [large language models (LLMs) have demonstrated in-context learning (ICL) ability](https://splab.sdu.edu.cn/GPT3.pdf). This enables LLMs to perform tasks and generate responses based on the context provided at inference within the input prompt. In practice, **the context comprises one or a few demonstrations of an intended task that guide (condition) the model** to perform downstream tasks without requiring explicit fine-tuning or retraining. [In 2022, Anthropic researchers investigated the hypothesis that *induction [attention] heads* were the primary mechanism for in-context learning in transformer language models](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html). This induction attention mechanism looks back at earlier parts of the input to copy and complete sequences, which would allow models to adapt to patterns and generate responses aligned to the provided context.
 
@@ -51,6 +53,8 @@ Tags: `[in-context learning]` `[named-entity-recognition]` `[function-calling]`
 
 ## 03. LLM-Augmentation
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/03_llm_augmentation.ipynb) 
+
 In Progress
 
 *This notebook is also available at [openai/openai-cookbook/](openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb)* - *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
@@ -58,7 +62,7 @@ In Progress
 
 ## 04. Retrieval Augmented Generation
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/03_retrieval_augmented_generation.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/04_retrieval_augmented_generation.ipynb)
 
 Retrieval Augmented Generation (RAG) is an advanced NLP technique that enhances the quality and reliability of Large Language Models (LLMs). This approach combines information retrieval with text generation to produce more factual and specific responses. In practice, RAG works by retrieving relevant passages from a knowledge base based on a user query, augmenting the original prompt with this information, and then generating a response using both the query and the augmented context. This method offers several advantages, including improved accuracy, easy incorporation of updated knowledge, and enhanced interpretability through citation of retrieved passages.
 
@@ -76,7 +80,7 @@ In Progress
 
 ## 06. Fine-Tuning BERT
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/05_fine_tuning_bert.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/06_fine_tuning_bert.ipynb)
 
 This notebook demonstrates the process of fine-tuning [BERT-base (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805) for the Microsoft Research Paraphrase Corpus (MRPC) task, part of the [General Language Understanding Evaluation (GLUE)](https://gluebenchmark.com/) benchmark. BERT-base is a transformer model pre-trained on a large corpus of English text using self-supervised learning. Its pre-training involves two key tasks: **Masked Language Modeling (MLM)**, where it predicts randomly masked words in a sentence, and **Next Sentence Prediction (NSP)**, where it determines if two sentences are consecutive in the original text. This allows BERT to learn bidirectional representations of language, capturing complex contextual relationships.
 
