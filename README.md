@@ -87,7 +87,6 @@ In this notebook, we'll walk through the steps of preparing the MRPC dataset (in
 <p align="center">
   <img src="./static/fine_tuning_process.png">
 </p>
-<p align="center">Basic Fine-Tuning Process</p>
 
 Tags: `[BERT]` `[Tokenization]` `[Dynamic-Padding]` `[Hugging Face Transformers]` `[Weights & Biases]` `[GLUE-Benchmark]` 
 
@@ -106,6 +105,5 @@ In this notebook, we introduce how quantization works specifically for LLMs with
 <p align="center">
   <img src="./static/model_quantization.png">
 </p>
-<p align="center">Scalar Model Quantization</p>
 
 Tags: `[Model Optimization]` `[Quantization]` `[Calibration]` `[Benchmark]`
