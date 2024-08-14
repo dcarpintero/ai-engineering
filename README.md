@@ -39,12 +39,13 @@ Tags: `[Transfomers]` `[Self-Attention]` `[BERT]` `[BertViz]`
 
 ## 01. In-Context Learning
 
-`In-context learning (ICL)` enables large language models (LLMs) to perform tasks and generate responses based on the context provided at inference within the input prompt. In practice, the context comprises `one or a few demonstrations of an intended task that condition the model` and allow it to adapt to various tasks without requiring explicit fine-tuning or retraining. This notebook explores the concept of in-context learning, demonstrating how to enable an LLM to implement Named Entity Recognition (NER) to enrich a corpus with Wikipedia links. This flexible approach supports rapid adaptation to specific domains without requiring a large training dataset.
+With the scaling of model size, [large language models (LLMs) have demonstrated in-context learning (ICL) ability](https://splab.sdu.edu.cn/GPT3.pdf). This enables LLMs to perform tasks and generate responses based on the context provided at inference within the input prompt. In practice, **the context comprises one or a few demonstrations of an intended task that guide (condition) the model** to perform downstream tasks without requiring explicit fine-tuning or retraining. [In 2022, Anthropic researchers investigated the hypothesis that *induction [attention] heads* were the primary mechanism for in-context learning in transformer language models](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html). This induction attention mechanism looks back at earlier parts of the context to copy and complete sequences, which would allow models to adapt to patterns and generate responses aligned to the provided context.
+
+This notebook explores the concept of in-context learning, demonstrating how to enable an LLM to implement Named Entity Recognition (NER). This flexible approach supports rapid adaptation to specific domains without requiring a large training dataset.
 
 <p align="center">
   <img src="./static/in_context_learning.png">
 </p>
-<p align="center">In-Context Learning</p>
 
 Tags: `[in-context learning]` `[named-entity-recognition]` `[function-calling]`
 `[openai]`
