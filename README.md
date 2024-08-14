@@ -49,7 +49,7 @@ Tags: `[Transfomers]` `[Self-Attention]` `[BERT]` `[BertViz]`
 Tags: `[in-context learning]` `[named-entity-recognition]` `[function-calling]`
 `[openai]`
 
-*This notebook is also available at openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb]* *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
+*This notebook is also available at [openai/openai-cookbook/](openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb)* - *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
 
 
 ## 02. LLM-Augmentation
