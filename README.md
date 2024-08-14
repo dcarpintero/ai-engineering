@@ -39,7 +39,15 @@ In this notebook, we'll explore how (multi-head) self-attention is implemented a
 
 ## 01. In-Context Learning
 
-In Progress
+`In-context learning (ICL)` enables large language models (LLMs) to perform tasks and generate responses based on the context provided at inference within the input prompt. In practice, the context comprises `one or a few demonstrations of an intended task that condition the model` and allow it to adapt to various tasks without requiring explicit fine-tuning or retraining. This notebook explores the concept of in-context learning, demonstrating how to enable an LLM to implement Named Entity Recognition (NER) to enrich a corpus with Wikipedia links. This flexible approach supports rapid adaptation to specific domains without requiring a large training dataset.
+
+<p align="center">
+  <img src="./static/in_context_learning.png">
+</p>
+<p align="center">In-Context Learning</p>
+
+*This notebook is also available at openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb]* *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
+
 
 ## 02. LLM-Augmentation
 
