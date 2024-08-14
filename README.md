@@ -35,7 +35,7 @@ In this notebook, we'll explore how (multi-head) self-attention is implemented a
 </p>
 <p align="center">Self-Attention Visualization in the BERT model</p>
 
-`Transfomers` `Self-Attention` `BERT` `BertViz`
+Tags: `[Transfomers]` `[Self-Attention]` `[BERT]` `[BertViz]`
 
 ## 01. In-Context Learning
 
@@ -45,6 +45,9 @@ In this notebook, we'll explore how (multi-head) self-attention is implemented a
   <img src="./static/in_context_learning.png">
 </p>
 <p align="center">In-Context Learning</p>
+
+Tags: `[in-context learning]` `[named-entity-recognition]` `[function-calling]`
+`[openai]`
 
 *This notebook is also available at openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb]* *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
 
@@ -65,7 +68,7 @@ In this notebook, we'll build a basic knowledge base with exemplary documents, a
   <img src="./static/retrieval_augmented_generation.png">
 </p>
 
-`RAG` `Chunking` `FAISS` `Hugging Face Transformers` `LangChain` `Sentence-Transformers` `Groq` `Meta-Llama-3.1-8B`
+Tags: `[RAG]` `[Chunking]` `[FAISS]` `[Hugging Face Transformers]` `[LangChain]` `[Sentence-Transformers]` `[Groq]` `[Meta-Llama-3.1-8B]`
 
 ## 04. Knowledge Graphs
 
@@ -86,7 +89,7 @@ In this notebook, we'll walk through the steps of preparing the MRPC dataset (in
 </p>
 <p align="center">Basic Fine-Tuning Process</p>
 
-`BERT` `Tokenization` `Dynamic-Padding` `Hugging Face Transformers` `Weights & Biases` `GLUE-Benchmark` 
+Tags: `[BERT]` `[Tokenization]` `[Dynamic-Padding]` `[Hugging Face Transformers]` `[Weights & Biases]` `[GLUE-Benchmark]` 
 
 ## 06. Fine-Tuning ResNet
 
@@ -105,4 +108,4 @@ In this notebook, we introduce how quantization works specifically for LLMs with
 </p>
 <p align="center">Scalar Model Quantization</p>
 
-`Model Optimization` `Quantization` `Calibration` `Benchmark`
+Tags: `[Model Optimization]` `[Quantization]` `[Calibration]` `[Benchmark]`
