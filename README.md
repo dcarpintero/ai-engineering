@@ -12,17 +12,16 @@ Annotated Notebooks to dive into foundational concepts and state-of-the-art tech
 [![GitHub forks](https://img.shields.io/github/forks/dcarpintero/generative-ai-101.svg?style=social&label=Fork)](https://GitHub.com/dcarpintero/generative-ai-101/network/)
 [![GitHub stars](https://img.shields.io/github/stars/dcarpintero/generative-ai-101.svg?style=social&label=Star)](https://GitHub.com/dcarpintero/generative-ai-101/stargazers/)
 
-- [Generative-AI-101](#generative-ai-101)
-  - [00. Transformers Self-Attention Mechanism](#00-transformers-self-attention-mechanism)
-  - [01. In-Context Learning](#01-in-context-learning)
-  - [02. LLM-Augmentation](#02-llm-augmentation)
-  - [03. Retrieval Augmented Generation](#03-retrieval-augmented-generation)
-  - [04. Knowledge Graphs](#04-knowledge-graphs)
-  - [05. Fine-Tuning BERT](#05-fine-tuning-bert)
-  - [06. Fine-Tuning ResNet](#06-fine-tuning-resnet)
-  - [07. Model Optimization: Quantization](#07-model-optimization-quantization)
+### TOC:
+- [01. Transformers Self-Attention Mechanism](#00-transformers-self-attention-mechanism)
+- [02. In-Context Learning](#01-in-context-learning)
+- [03. LLM-Augmentation](#02-llm-augmentation)
+- [04. Retrieval Augmented Generation](#03-retrieval-augmented-generation)
+- [05. Knowledge Graphs](#04-knowledge-graphs)
+- [06. Fine-Tuning BERT](#05-fine-tuning-bert)
+- [07. Model Optimization: Quantization](#07-model-optimization-quantization)
 
-## 00. Transformers Self-Attention Mechanism
+## 01. Transformers Self-Attention Mechanism
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/00_transformers_self_attention.ipynb) 
 
@@ -37,7 +36,7 @@ In this notebook, we'll explore how (multi-head) self-attention is implemented a
 
 Tags: `[Transfomers]` `[Self-Attention]` `[BERT]` `[BertViz]`
 
-## 01. In-Context Learning
+## 02. In-Context Learning
 
 With the scaling of model size, [large language models (LLMs) have demonstrated in-context learning (ICL) ability](https://splab.sdu.edu.cn/GPT3.pdf). This enables LLMs to perform tasks and generate responses based on the context provided at inference within the input prompt. In practice, **the context comprises one or a few demonstrations of an intended task that guide (condition) the model** to perform downstream tasks without requiring explicit fine-tuning or retraining. [In 2022, Anthropic researchers investigated the hypothesis that *induction [attention] heads* were the primary mechanism for in-context learning in transformer language models](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html). This induction attention mechanism looks back at earlier parts of the context to copy and complete sequences, which would allow models to adapt to patterns and generate responses aligned to the provided context.
 
@@ -50,14 +49,14 @@ This notebook explores the concept of in-context learning, demonstrating how to 
 Tags: `[in-context learning]` `[named-entity-recognition]` `[function-calling]`
 `[openai]`
 
-*This notebook is also available at [openai/openai-cookbook/](openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb)* - *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
-
-
-## 02. LLM-Augmentation
+## 03. LLM-Augmentation
 
 In Progress
 
-## 03. Retrieval Augmented Generation
+*This notebook is also available at [openai/openai-cookbook/](openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb)* - *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
+
+
+## 04. Retrieval Augmented Generation
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/03_retrieval_augmented_generation.ipynb)
 
@@ -71,11 +70,11 @@ In this notebook, we'll build a basic knowledge base with exemplary documents, a
 
 Tags: `[RAG]` `[Chunking]` `[FAISS]` `[Hugging Face Transformers]` `[LangChain]` `[Sentence-Transformers]` `[Groq]` `[Meta-Llama-3.1-8B]`
 
-## 04. Knowledge Graphs
+## 05. Knowledge Graphs
 
 In Progress
 
-## 05. Fine-Tuning BERT
+## 06. Fine-Tuning BERT
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/05_fine_tuning_bert.ipynb)
 
@@ -90,10 +89,6 @@ In this notebook, we'll walk through the steps of preparing the MRPC dataset (in
 </p>
 
 Tags: `[BERT]` `[Tokenization]` `[Dynamic-Padding]` `[Hugging Face Transformers]` `[Weights & Biases]` `[GLUE-Benchmark]` 
-
-## 06. Fine-Tuning ResNet
-
-In Progress
 
 ## 07. Model Optimization: Quantization
 
