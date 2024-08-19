@@ -81,7 +81,17 @@ Tags: `[RAG]` `[Chunking]` `[FAISS]` `[Hugging Face Transformers]` `[LangChain]`
 
 ## 05. Knowledge Graphs
 
-In Progress
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/05_knowledge_graphs.ipynb)
+
+Knowledge Graphs, a form of graph-based knowledge representation, provide a method for modeling and storing interlinked information in a human - and machine - understandable format. In practice, such a graph data structure consists of *nodes* and *edges*, representing entities and their relationships. Unlike traditional databases, the inherent expressiveness of graphs allows for richer semantic understanding, while providing the flexibility to accommodate new entity types and relationships without being constrained by a fixed schema.
+
+By combining knowledge graphs with embeddings (vector search), we can leverage *multi-hop connectivity* and *contextual understanding of information* to enhance querying, reasoning, and explainability in LLMs. This notebook explores the practical implementation of this approach, demonstrating how to (i) build a knowledge graph from academic literature, and (ii) extract actionable insights from it.
+
+<p align="center">
+  <img src="./static/knowledge-graphs.png">
+</p>
+
+Tags: `[Knowledge Graphs]` `[Neo4j]` `[Contextual Reasoning]` `[Embeddings]` `[Data Modeling]` 
 
 ## 06. Fine-Tuning BERT
 
