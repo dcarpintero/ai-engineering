@@ -1,6 +1,6 @@
 # Generative-AI-101
 
-Annotated Notebooks to dive into foundational concepts and state-of-the-art techniques for LLMs and Diffusion models. This is a work in progress, more content will be released on a regular basis.
+Best Practices for building with LLMs. Dive into Self-Attention, In-Context Learning, LLM-Augmentation, RAG, Knowledge-Graphs, Fine-Tuning, and Model Optimization.
 
 [![GitHub license](https://img.shields.io/github/license/dcarpintero/generative-ai-101.svg)](https://github.com/dcarpintero/generative-ai-101/blob/master/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/dcarpintero/generative-ai-101.svg)](https://GitHub.com/dcarpintero/generative-ai-101/graphs/contributors/)
