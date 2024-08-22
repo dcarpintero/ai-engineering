@@ -1,4 +1,4 @@
-Title;Abstract;Topic;Subtopic;Authors;Publication Date
+Title;Abstract;Topic;Subtopic;Authors;Publication_Date
 Language Model Architectures for Abstractive Text Summarization;We review and analyze different language model architectures designed specifically for abstractive text summarization, evaluating their effectiveness in capturing key information.;Foundations of Language Models;Model Architectures;Emma Wilson;2024-06-10
 Language Models for Sentiment Analysis in Social Media;We propose language model-based approaches for sentiment analysis on social media data, helping businesses understand public opinion and improve their products.;AI Ethics, Safety, and Societal Impact;Social Impact;John Robinson, David Miller;2023-08-29
 Language Model Fine-tuning for Biomedical Tasks;We explore fine-tuning techniques for adapting language models to biomedical tasks, aiding in scientific research and drug discovery.;Foundations of Language Models;Model Optimization;Sophia Martinez;2024-03-03
