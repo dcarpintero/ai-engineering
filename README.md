@@ -62,7 +62,7 @@ LLM-augmentation with tool integration involves connecting models to external to
   <img src="./static/llm_augmentation_tool_integration.png">
 </p>
 
-*This notebook is also available at [openai/openai-cookbook/](openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb)* - *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
+*This notebook was published also at [openai/openai-cookbook/](openai/openai-cookbook/examples/Named_Entity_Recognition_to_enrich_text.ipynb)* - *[PR#807](https://github.com/openai/openai-cookbook/pull/807)*
 
 
 ## 04. Retrieval Augmented Generation
@@ -92,6 +92,8 @@ By combining knowledge graphs with embeddings (vector search), we can leverage *
 </p>
 
 Tags: `[Knowledge Graphs]` `[Neo4j]` `[Contextual Reasoning]` `[Embeddings]` `[Data Modeling]` 
+
+*This notebook was published also at [huggingface](https://huggingface.co/learn/cookbook/rag_with_knowledge_graphs_neo4j)* - *[PR#187](https://github.com/huggingface/cookbook/pull/187)*
 
 ## 06. Fine-Tuning BERT
 
