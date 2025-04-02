@@ -1,4 +1,4 @@
-# Generative-AI-101
+# AI Engineering
 
 Best Practices for building with LLMs. Dive into Self-Attention, In-Context Learning, LLM-Augmentation, RAG, Knowledge-Graphs, Fine-Tuning, and Model Optimization.
 
